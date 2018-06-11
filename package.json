@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "micro build/src",
+        "dev": "micro-dev build/src --watch build/src",
+        "build": "tsc",
+        "test": "ava build/test"
+    },
+    "dependencies": {
+        "micro": "^9.3.2"
+    },
+    "devDependencies": {
+        "@types/got": "^8.3.1",
+        "@types/micro": "^7.3.1",
+        "ava": "^0.25.0",
+        "got": "^8.3.1",
+        "micro-dev": "^3.0.0",
+        "test-listen": "^1.1.0",
+        "typescript": "^2.9.1"
+    }
+}
