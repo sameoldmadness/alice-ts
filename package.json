@@ -4,7 +4,11 @@
         "start": "micro build/src",
         "dev": "micro-dev build/src --watch build/src",
         "build": "tsc",
-        "test": "ava build/test"
+        "test": "ava build/test",
+        "deploy": "now --public && now alias"
+    },
+    "now": {
+        "alias": "alice-ts"
     },
     "dependencies": {
         "micro": "^9.3.2"
@@ -15,6 +19,7 @@
         "ava": "^0.25.0",
         "got": "^8.3.1",
         "micro-dev": "^3.0.0",
+        "now": "^11.2.3",
         "test-listen": "^1.1.0",
         "typescript": "^2.9.1"
     }
